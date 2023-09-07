@@ -1,4 +1,4 @@
-name: Hyas CI
+name: Hugo build and deploy
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
@@ -16,7 +16,7 @@ jobs:
         node: [16.x, 18.x]
 
     steps:
-    - name: Check out Hyas project
+    - name: Check out project
       uses: actions/checkout@v2
 
     - name: Set up Node.js ${{ matrix.node }}
