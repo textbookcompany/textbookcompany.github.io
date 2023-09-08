@@ -1,4 +1,4 @@
-baseurl = "https://textbookcompany.github.io/"
+baseurl = "https://textbookcompany.org/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
