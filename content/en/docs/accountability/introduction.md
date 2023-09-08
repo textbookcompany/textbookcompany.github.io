@@ -14,4 +14,3 @@ toc: true
 ---
 
 # Introducing Accountability
-
